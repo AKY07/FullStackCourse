@@ -1,27 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FULL STACK COURSE</title>
-    <style>
-      div{
-          height: 100px;
-          background-color: red;
-      }
-      span{
-        height: 100px;
-          background-color: red;
-      }
-    </style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FULL STACK COURSE</title>
+  <style>
+    div {
+      background-color: red;
+      width: 400px;
+      height: 200px;
+    }
+
+    span {
+      /* width: 400px;
+      height: 200px; */
+      background-color: royalblue;
+    }
+  </style>
 </head>
+
 <body>
-    <div></div>
-    <span></span>
+
 </body>
-  
+<!-- <div>I m Div</div>
+  <span>I m span</span> -->
+<div>
+  <h2>Pointers for block</h2>
+  <ol>
+    <li>Width is a bock level element is 100% of the viewport width</li>
+    <li>Height of the block is not set by default</li>
+    <li>Height and width can be explicitly set by using css</li>
+  </ol>
+</div>
+<span>
+  <h2>Pointers for inline</h2>
+  <ol>
+    <li>Width is a inline level element depend on content</li>
+    <li>Height of the inline is not set by default</li>
+    <li>Height and width can be explicitly set by using css</li>
+  </ol>
+</span>
+
 </html>
 
-<!-- inline css has highest priority order, use !important to give priority to internal css over inline -->
-<!-- we can set height and width of inline element eg span here -->
+<!-- in any block element height and width property work, it impossible to use width,heigth property in inline element,inline element height and width control by content in it -->
+<!-- In html, each element viewport set as 100% but not in case on height -->
