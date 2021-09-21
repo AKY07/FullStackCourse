@@ -7,43 +7,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>FULL STACK COURSE</title>
   <style>
-    div {
-      background-color: red;
-      width: 400px;
-      height: 200px;
-    }
-
-    span {
-      /* width: 400px;
-      height: 200px; */
+    .background{
       background-color: royalblue;
-    }
+      box-sizing: border-box; /*not height and width set for container not content  */
+      width: 250px;
+      height: 250px;
+      /* padding-top:50px;
+      padding-right: 10px;
+      padding-bottom: 10px;
+      padding-left:30px; */
+      padding: 50px 10px 10px 30px;
+      /* padding: 50px;- means all of padding is same 
+      padding:top bottom and padding:right left , in case of if we want to use only two parameter     */
+    } 
+
   </style>
 </head>
 
 <body>
+  <div class="background">
+    <h2>lorem ip</h2>
+  </div>
 
 </body>
-<!-- <div>I m Div</div>
-  <span>I m span</span> -->
-<div>
-  <h2>Pointers for block</h2>
-  <ol>
-    <li>Width is a bock level element is 100% of the viewport width</li>
-    <li>Height of the block is not set by default</li>
-    <li>Height and width can be explicitly set by using css</li>
-  </ol>
-</div>
-<span>
-  <h2>Pointers for inline</h2>
-  <ol>
-    <li>Width is a inline level element depend on content</li>
-    <li>Height of the inline is not set by default</li>
-    <li>Height and width can be explicitly set by using css</li>
-  </ol>
-</span>
 
 </html>
-
-<!-- in any block element height and width property work, it impossible to use width,heigth property in inline element,inline element height and width control by content in it -->
-<!-- In html, each element viewport set as 100% but not in case on height -->
