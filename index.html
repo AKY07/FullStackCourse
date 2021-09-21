@@ -16,20 +16,22 @@
     body{
       background-color: saddlebrown;
     }
-    .background{
+    .parent{
       background-color: royalblue;
-      width: 250px;
-      height: 250px;
-      padding: 50px;
+      width: 80vw;  /* 80% of viewport width  */
+      height: 30vh; /* 30% of viewport height  */
      } 
+     .child{
+       background-color: salmon;
+       height: 20px;
+     }
 
   </style>
 </head>
 
 <body>
-  <div class="background">
-    <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus autem accusantium ab ea quaerat unde, incidunt esse inventore in! Soluta vitae id fuga. Cupiditate ullam</span>
-    <a href="afd">link</a>
+  <div class="parent">
+    <div class="child"></div>
   </div>
 
 </body>
