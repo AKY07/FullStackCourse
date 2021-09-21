@@ -13,25 +13,21 @@
         box-sizing: border-box;
         text-decoration: none;
     }
+    body{
+      height: 100vh;
+    }
     .parent{
       background-color: royalblue;
-      padding: 20px;
-      width: 50vw;  
-      height: 60px; 
+      
+       height: 60%;  /* without setting parent height set:- it does not make any sense, means 60% of parent and here parent is body and body height depent on content */
      } 
-     .child{
-       background-color: salmon;
-       height: 20px;
-       width: 80%; /* scale element relative to its immediate parent */
-
-     }
-
+    
   </style>
 </head>
 
 <body>
   <div class="parent">
-    <div class="child"></div>
+   Lorem, ipsum.
   </div>
 
 </body>
