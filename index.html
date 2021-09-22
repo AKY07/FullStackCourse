@@ -19,17 +19,18 @@
       background-color: burlywood;
     }
     .two{
-      /* position: static; is default positionfor each and every element */
       background-color: violet;
-      /* position: static;
-      left: 100px;
-      top: 100px; - does not happen anything becoz position is static */
       position: relative;
-      /* its relative to itself */
-      top: 100px;
-      /* left: 40px; */
-      /* right: 40px; */
-
+    }
+    h2{
+      background-color: turquoise;
+      position: absolute;
+      /* absolute still relative to something, here it means relative to parents */
+      /* its still a block element but absolute change its width  */
+      /* right: 0; whole block shiefted to right */
+      right: 0;
+      bottom: 0;
+      
     }
   
   </style>
@@ -37,9 +38,6 @@
 </head>
 
 <body>
-  <div class="one">
-    <h2>Heading of div 1</h2>
-  </div>
   <div class="two">
     <h2>Heading of div 2</h2>
   </div>
