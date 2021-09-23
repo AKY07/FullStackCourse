@@ -8,51 +8,42 @@
   <title>FULL STACK COURSE</title>
  <style>
    *{
-     margin: 0;
+     margin: 5px;
      padding: 0;
      box-sizing: border-box;
    }
-   
-  .parent{
-    min-height: 400px;
-    background-color: black;
-    position: relative;
-    display: flex;
-    flex-direction: row; 
-    flex-wrap: wrap;
-    justify-content: space-around;
-   
-  }
-  .child{
-    width: 100px;
-    height: 150px;
-    background-color: orange;
-    /* position: absolute;
-    top: 220px;
-    left: 300px; */
-    /*above is native approach for align yellow box in center of black box  */
-    margin: 10px;
-    /* align-items: stretch; */
-    
-  }
+   .background{
+     color: orchid;
+     
+   }
+   h1.background{
+     background-color: peru;
+   }
+   h2.background#unique{
+     background-color:yellow;
+   }
+   h3.background{
+     background-color:royalblue;
+   }
+   span.background{
+     background-color: red;
+
+   }
+
  </style>
 </head>
 
 <body>
- <div class="parent">
-   <div class="child" style="background-color: orange;"></div>
-   <div class="child" style="background-color: orangered;"></div>
-   <div class="child" style="background-color: orchid;"></div>
-   
-   <div class="child" style="background-color: orange;"></div>
-   <div class="child" style="background-color: orangered;"></div>
-   <div class="child" style="background-color: orchid;"></div>
-   
-   <div class="child" style="background-color: orange;"></div>
-   <div class="child" style="background-color: orangered;"></div>
-   <div class="child" style="background-color: orchid;"></div>
-   
- </div>
+ <h1 style="background-color: palegreen;">Heading One</h1>
+ <h2 style="background-color: paleturquoise ;">Heading Two</h2>
+ <h3 style="background-color: palevioletred;">Heading Three</h3>
+ <hr>
+ <br>
+ <h1 class="background">Heading One</h1>
+ <h2 id="unique" class="background">Heading Two</h2>
+ <h3 class="background">Heading Three</h3>
+
+ <span class="background">I'm a span</span>
 </body>
 
 </html>
