@@ -13,30 +13,45 @@
       box-sizing: border-box;
     }
 
-    /* div.parent div {
-      background-color: salmon;
-    } */
-    div.parent div:nth-child(2){
-      background-color: salmon;
-    }
-    
-    div.parent div:last-child{
-      background-color: yellow;
-    }
-    
-    div.parent div:first-child{
-      background-color: blue;
-    }
+   h2{
+     padding: 5px;
+   color: yellow;
+   background-color: yellowgreen;
+   }
+   h2:hover{
+     background-color: tomato;
+     cursor: pointer;
+   }
+  div::selection{
+    background: lime;
+  }
+  input:focus{
+    background: orange;
+    color: orangered;
+    font-size: 2rem;
+  }
+  h2::after{
+    content: "i m after";
+    font-size: 0.5rem;
+    color: red;
+    position: relative;
+  }
+  h2::before{
+    content: "i m before";
+    font-size: 0.5rem;
+    color: red;
+    position: relative;
+  }
     
   </style>
 </head>
 
 <body>
-  <div class="parent">
-    <div>i m div</div>
-    <div>i m also div</div>
-    <div>i m a div again</div>
-  </div>
+  
+    <h2>i m a heading</h2>
+    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum unde quaerat tempore libero laudantium. Ex ullam pariatur molestias, quod unde modi et provident dolore libero, nihil inventore dicta, voluptates </div>
+    <input type="text" name="" id="">
+ 
 </body>
 
 </html>
