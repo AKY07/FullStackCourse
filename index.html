@@ -13,45 +13,35 @@
       box-sizing: border-box;
     }
 
-   h2{
-     padding: 5px;
-   color: yellow;
-   background-color: yellowgreen;
-   }
-   h2:hover{
-     background-color: tomato;
-     cursor: pointer;
-   }
-  div::selection{
-    background: lime;
-  }
-  input:focus{
-    background: orange;
-    color: orangered;
-    font-size: 2rem;
-  }
-  h2::after{
-    content: "i m after";
-    font-size: 0.5rem;
-    color: red;
-    position: relative;
-  }
-  h2::before{
-    content: "i m before";
-    font-size: 0.5rem;
-    color: red;
-    position: relative;
-  }
-    
+    div.parent {
+      background-color: black;
+      min-height: 200px;
+    }
+
+    div.child {
+      background-color: blue;
+      height: 100px;
+      width: 100px;
+      border-radius: 100%;
+      /* transform: rotateY(100deg); */
+      transition-duration: 0.5s;
+      /* transition-timing-function: linear; */
+      transition-timing-function: ease-in;
+    }
+    div.parent:hover div.child{
+      background-color: red;
+      /* transform: rotateY(120deg); */
+      /* transform: scale(0.4); */
+      transform: translate(500px);
+    }
   </style>
 </head>
 
 <body>
-  
-    <h2>i m a heading</h2>
-    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum unde quaerat tempore libero laudantium. Ex ullam pariatur molestias, quod unde modi et provident dolore libero, nihil inventore dicta, voluptates </div>
-    <input type="text" name="" id="">
- 
+  <div class="parent">
+    <div class="child"></div>
+  </div>
+
 </body>
 
 </html>
