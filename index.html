@@ -6,44 +6,37 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>FULL STACK COURSE</title>
- <style>
-   *{
-     margin: 5px;
-     padding: 0;
-     box-sizing: border-box;
-   }
-   .background{
-     color: orchid;
-     
-   }
-   h1.background{
-     background-color: peru;
-   }
-   h2.background#unique{
-     background-color:yellow;
-   }
-   h3.background{
-     background-color:royalblue;
-   }
-   span.background{
-     background-color: red;
+  <style>
+    * {
+      margin: 5px;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-   }
-
- </style>
+    /* div.parent div {
+      background-color: salmon;
+    } */
+    div.parent div:nth-child(2){
+      background-color: salmon;
+    }
+    
+    div.parent div:last-child{
+      background-color: yellow;
+    }
+    
+    div.parent div:first-child{
+      background-color: blue;
+    }
+    
+  </style>
 </head>
 
 <body>
- <h1 style="background-color: palegreen;">Heading One</h1>
- <h2 style="background-color: paleturquoise ;">Heading Two</h2>
- <h3 style="background-color: palevioletred;">Heading Three</h3>
- <hr>
- <br>
- <h1 class="background">Heading One</h1>
- <h2 id="unique" class="background">Heading Two</h2>
- <h3 class="background">Heading Three</h3>
-
- <span class="background">I'm a span</span>
+  <div class="parent">
+    <div>i m div</div>
+    <div>i m also div</div>
+    <div>i m a div again</div>
+  </div>
 </body>
 
 </html>
