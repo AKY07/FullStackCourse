@@ -5,56 +5,51 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
     <title>Full Stack Course</title>
     <style>
-    div.parent{
-         background:black ;
-         color: white;
-         font-size: 2rem;
+      div.parent {
+          display: flex;
+          align-items: stretch;
+          background-color: #111;
+          height: 100vh;
       }
-      /* @media(max-width:700px){
-        div.parent{
-          background: blue;
-          color: yellow;
-          font-size: 0.8rem;
-
-        }
+      
+      div.child {
+          background-color: #ffbf00;
+          flex-basis: 80%;
       }
-      @media(max-width:500px){
-        div.parent{
-          background: chartreuse;
-          color: yellow;
-          font-size: 0.8rem;
-
-        }
-      } */
-      /* @media(max-width:700px){
-        div.parent{
-          background: blue;
-          color: yellow;
-          font-size: 0.8rem;
-
-        }
+      
+      div.sidebar {
+          background-color: crimson;
+          flex-basis: 20%;
       }
-      in media tag, order of tag matter.
-        */
-        @media(min-width:700px){
-        div.parent{
-          background: blue;
-          color: yellow;
-          font-size: 0.8rem;
-
-        }
+      
+      @media (max-width: 550px) {
+          div.sidebar {
+              animation: 5s expand linear infinite;
+          }
+          div.child {
+              flex-basis: 100%;
+          }
       }
-   
-    </style>
+      
+      @keyframes expand {
+          0% {
+              flex-basis: 0%;
+          }
+          100% {
+              flex-basis: 50%;
+          }
+      }
+  </style>
 </head>
 
 <body>
-  <div class="parent">
-    <h1>I'm a heading</h1>
-    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis alias cupiditate consequuntur dicta mollitia ipsum fuga ab doloremque qui, aut, ut corporis. Omnis non ullam totam vero suscipit? Suscipit, facilis.
-  </div>
+    <div class="parent">
+        <div class="sidebar"></div>
+        <div class="child"></div>
+    </div>
 </body>
-    
+
 </html>
