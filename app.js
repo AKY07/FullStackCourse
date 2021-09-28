@@ -1,28 +1,24 @@
-// console.log("Hello World")
-// console.warn("Hello Warning")
-// console.error("Hello error")
+//Variable
 
+// var age = 19
+// console.log(age)  //19
+// console.log(typeof age) // number
 
-// DataTypes
+// var a
+// console.log(a) //undefined - means does not have any value.(not defined) 
 
-//String
-//console.log("Hello World")  //Hello World
-//console.log(typeof"Hello World")  //string
-//console.log(typeof"d")   //string - in js all character is   string.
+// var b=null
+// console.log(b) //null - null is an actuall value. null is saying something is suppose to be there but it was not there , its an empty space where undefined is not defined yet.
 
-// Number
-// console.log(typeof 1)  //number
-// console.log(typeof 1.2)  //number
-// console.log(typeof 112234455666)  //number
-// console.log(typeof -1)  //number
-// console.log(typeof -1.2)  //number
-// console.log(typeof -123445456656)  //number
+// console.log(NAME)  //error -  bcoz here NAME, never asign never decleared.
 
-//boolean
-// console.log(true)   //true
-// console.log( typeof true) //boolean
-// console.log(false)  //false
-// console.log(typeof false)  //boolean
+// var age
+// console.log(typeof age)  //undefined
+
+// var age=null
+// console.log(typeof age)  //object
+
+// null is an object but undefine is not define and both are primitive datatypes
 
 
 
