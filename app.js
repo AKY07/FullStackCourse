@@ -1,24 +1,23 @@
-//Variable
+//Non-Primitive Datatypes
+//JS Array is not generic
+// var arr=[1,2,3,4]
+// console.log(arr)  // (4) [1,2,3,4]
+// console.log(typeof arr)  //object
+// var arr=[1,2,3,4,"age"]
+// console.log(arr)  //(5) [1,2,3,4,'age']
+// console.log(arr.length)  //5
+// arr.push(5)
+// console.log(arr)  //(6) [1,2,3,4,'age',5]
+// console.log(arr.length) //6
 
 // var age = 19
-// console.log(age)  //19
-// console.log(typeof age) // number
+// age=21
+// console.log(age) //21 - value reasign
 
-// var a
-// console.log(a) //undefined - means does not have any value.(not defined) 
+// const age = 19
+// age=21
+// console.log(age) //error - we can reassign value to the const
 
-// var b=null
-// console.log(b) //null - null is an actuall value. null is saying something is suppose to be there but it was not there , its an empty space where undefined is not defined yet.
-
-// console.log(NAME)  //error -  bcoz here NAME, never asign never decleared.
-
-// var age
-// console.log(typeof age)  //undefined
-
-// var age=null
-// console.log(typeof age)  //object
-
-// null is an object but undefine is not define and both are primitive datatypes
 
 
 
