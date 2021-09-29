@@ -1,23 +1,19 @@
-var heading=document.getElementById('heading')
-var body=document.querySelector('body')
-console.log(heading)
+var list=document.querySelector('ul')
+console.log(list)
 
-heading.innerHTML="I was added in js"
-heading.style="color:red;font-size:2rem"
-heading.classList.add('five')
-heading.classList.remove('one')
-console.log(heading.classList)
+var arr=['Go the GYM','cook oamteal','Eat']
+arr.push('complete the assignment')
 
-// body.classList.add('dark')
-// body.classList.remove('dark')
-
-
-
-
-
-// var query=document.querySelectorAll('.para')
-// console.log(query)
-
+for(var i=0;i<arr.length;i++){
+    var element=document.createElement('li')
+    var textNode=document.createTextNode(arr[i])
+    // console.log(textNode)
+    // console.log(arr[i])
+    // console.log(element)
+    element.appendChild(textNode)
+    list.appendChild(element)
+    // console.log(element)
+}
 
 
 
