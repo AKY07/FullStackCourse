@@ -1,22 +1,25 @@
 var heading=document.getElementById('heading')
-heading.innerHTML="Hi from JS"
-var para=document.getElementsByClassName('para')
+var body=document.querySelector('body')
 console.log(heading)
-console.log(typeof heading)  //object
-console.log(para)
-console.log(para.length) //2
-console.log(para[0])
-console.log(para[1])
 
-// para.push('aalok')
+heading.innerHTML="I was added in js"
+heading.style="color:red;font-size:2rem"
+heading.classList.add('five')
+heading.classList.remove('one')
+console.log(heading.classList)
 
-var tags=document.getElementsByTagName('a')
-console.log(tags) //htmlcollection
+// body.classList.add('dark')
+// body.classList.remove('dark')
 
-var query=document.querySelector('#heading')
-console.log(query)  //h2#heading
-var query=document.querySelector('.para')
-console.log(query)  //p.para
+
+
+
+
+// var query=document.querySelectorAll('.para')
+// console.log(query)
+
+
+
 
 
 
