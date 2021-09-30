@@ -1,23 +1,57 @@
+//CallBack Function
 
-//below both functions are same
-
-var add=(a=0,b=0)=> a+b
-console.log(add(10,20))  //30
-
-//or
-
-var add=function(a=0,b=0){
-    
-    var sum=a+b
-    return sum
-}
-
-console.log(add(10,20))  //30
+var arr=['go to the GYM','Eat Food','Clean House']
 
 
-const greet = name => 'hi ' + name
-console.log(greet('Aalok'))   //hi Aalok
-    
+// for(var i=0;i<arr.length;i++){
+//     console.log(arr[i])
+// }
+
+// //output
+// // go to the GYM
+// // Eat Food
+// // Clean House
+
+
+// var callbackFunction=()=>{
+//     console.log('I ran')
+// }
+
+// arr.forEach(callbackFunction) //  I ran
+
+
+// var callbackFunction=(element)=>{
+//     console.log(element)
+// }
+
+// arr.forEach(callbackFunction)
+
+// //output
+// // go to the GYM
+// // Eat Food
+// // Clean House
+   
+
+// var callbackFunction=(element,index)=>{
+//     console.log(element,index)
+// }
+
+// arr.forEach(callbackFunction)
+
+// //output
+// // go to the GYM 0
+// // Eat Food 1 
+// // Clean House 2
+
+
+arr.forEach((element,index)=>{
+    console.log(element,index)
+})
+
+// //output
+// // go to the GYM 0
+// // Eat Food 1 
+// // Clean House 2
    
 
 
