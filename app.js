@@ -1,57 +1,41 @@
-//CallBack Function
+var button = document.querySelector('button')
+var input = document.querySelector('input')
+var list = document.querySelector('ul')
 
-var arr=['go to the GYM','Eat Food','Clean House']
-
-
-// for(var i=0;i<arr.length;i++){
-//     console.log(arr[i])
+// const callbackfunc=()=>{
+//     console.log('sam')
 // }
 
-// //output
-// // go to the GYM
-// // Eat Food
-// // Clean House
+// button.addEventListener('click',callbackfunc)
 
-
-// var callbackFunction=()=>{
-//     console.log('I ran')
+// const callbackfunc=(event)=>{
+//     console.log(event)
 // }
 
-// arr.forEach(callbackFunction) //  I ran
+// button.addEventListener('click',callbackfunc)
 
 
-// var callbackFunction=(element)=>{
-//     console.log(element)
+// const callbackfunc=(event)=>{
+//     console.log(event.target)
+//     console.log(input.value)
 // }
 
-// arr.forEach(callbackFunction)
+// button.addEventListener('click',callbackfunc)
 
-// //output
-// // go to the GYM
-// // Eat Food
-// // Clean House
+
+const callbackfunc=(event)=>{
+    // console.log(button.innerHTML)
+    const inputValue=input.value
+    const element=document.createElement('li')
+    const textNode = document.createTextNode(inputValue)
+    element.appendChild(textNode)
+    list.appendChild(element)
    
+}
 
-// var callbackFunction=(element,index)=>{
-//     console.log(element,index)
-// }
-
-// arr.forEach(callbackFunction)
-
-// //output
-// // go to the GYM 0
-// // Eat Food 1 
-// // Clean House 2
+button.addEventListener('click',callbackfunc)
 
 
-arr.forEach((element,index)=>{
-    console.log(element,index)
-})
-
-// //output
-// // go to the GYM 0
-// // Eat Food 1 
-// // Clean House 2
    
 
 
