@@ -1,7 +1,34 @@
-var arr=[1,2,3,4,5,6,7,8]
+var button = document.querySelector('button')
+var input = document.querySelector('input')
+var list = document.querySelector('ul')
 
-arr.splice(3,2)  //remove 2 element from index 3
-console.log(arr)  //(7) [1, 2, 3, 5, 6, 7, 8]
+var chores = []
+
+var deleteItem = (value) => {
+   const index=chores.indexOf(value)
+   chores.splice(index,1)
+    console.log(chores)
+    
+}
+
+
+const callbackfunc = (event) => {
+    // console.log(input.value)
+    const inputValue = input.value
+    if (chores.includes(inputValue)) {
+        console.log('already exists')
+    }
+    else {
+        chores.push(inputValue)
+        const element = document.createElement('li')
+        const textNode = document.createTextNode(inputValue)
+        element.appendChild(textNode)
+        list.appendChild(element)
+        element.addEventListener('click', (e) => { e.target.remove() })
+    }
+}
+
+button.addEventListener('click',callbackfunc)
 
 
 
