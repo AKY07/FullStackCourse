@@ -1,34 +1,185 @@
-var button = document.querySelector('button')
-var input = document.querySelector('input')
-var list = document.querySelector('ul')
-
-var chores = []
-
-var deleteItem = (value) => {
-   const index=chores.indexOf(value)
-   chores.splice(index,1)
-    console.log(chores)
-    
-}
+// let a=20
+// var b=40
+// console.log(a,b)  // 20 40
+// a=10
+// b=20
+// console.log(a,b)  //10,20
 
 
-const callbackfunc = (event) => {
-    // console.log(input.value)
-    const inputValue = input.value
-    if (chores.includes(inputValue)) {
-        console.log('already exists')
+// let vs var-let has block scope but var has global scope
+
+// if(true){
+//     var Name='Ferrari'
+//     console.log(Name)    //Ferrari
+// }
+
+// console.log(Name)       //Ferrari
+
+// if(true){
+//     let Name='Ferrari'
+//     console.log(Name)    //Ferrari
+// }
+
+// console.log(Name)       //error
+
+
+// for(var i=0;i<10;i++){
+//     console.log('loop ran')
+// }
+// console.log(i)   //10
+
+// for(let i=0;i<10;i++){
+//     console.log('loop ran')
+// }
+// console.log(i)   //error
+
+
+// if (true){
+//     var Name="Ferrari"
+//     if (true){
+//         console.log(Name)   //Ferrari
+
+//     }  
+// }
+
+// if (true){
+//     console.log(Name)   //Ferrari
+  
+//     if (true){
+//         var Name="Ferrari" 
+        
+//     }  
+// }
+
+
+
+// const print=()=>{
+//     var Name='Aalok'
+//     if(true){
+//         console.log(Name)
+//     }
+//     return print
+// }
+
+
+
+// console.log(this)   //window object
+// console.log(this.alert('hi'))
+
+
+// let car={}
+// console.log(car)  //{}
+// console.log(typeof car)  //object
+
+
+
+// let car={
+//     name:"C Class",
+//     manufacturer:"Mercedes",
+//     print:function(){
+//         console.log(name +'by'+this.manufacturer)
+//     }
+// }
+
+// car.print()    //FerraribyMercedes
+// console.log(car.name)  //C Class
+// console.log(car.manufacturer)   //Mercedes
+
+//A function inside a object is a method
+
+// let car={
+//     name:"C Class",
+//     manufacturer:"Mercedes",
+//     print:function(a){
+//         console.log(a)
+//     }
+// }
+
+// car.print('Ferrari')   //Ferrari
+
+
+// let car={
+//     name:"C Class",
+//     manufacturer:"Mercedes",
+//     print:function(){
+//       console.log(this)
+//     }
+// }
+
+// car.print()
+
+// let manufacturer="ferrari"
+// let car={
+//     name:"C Class",
+//     manufacturer:"Mercedes",
+//     print:function(){
+//       console.log(manufacturer)
+//     }
+// }
+// car.print()  //ferrari
+
+
+// let car={
+//     name:"C Class",
+//     manufacturer:"Mercedes",
+//     print:function(){
+//       console.log(car.manufacturer,car.name)
+//     }
+// }
+
+// car.print()    //Mercedes C Class
+
+
+// let car = {
+//     name: "C Class",
+//     manufacturer: "Mercedes",
+//     print: function () {
+//         console.log(`${this.name} was created by ${this.manufacturer}`)
+//     }
+// }
+
+// car.print()    //C Class was created by Mercedes
+
+
+
+// let car = {
+//     name: "C Class",
+//     manufacturer: "Mercedes",
+//     print:()=> {
+//         console.log(this)
+//         console.log(`${this.name} was created by ${this.manufacturer}`)
+//     }
+// }
+
+// car.print()  //Ferrari was created by undefined
+
+
+
+
+
+let car = {
+    name: "C Class",
+    manufacturer: "Mercedes",
+    print:()=> {
+        console.log(this)
+        console.log(`${this.name} was created by ${this.manufacturer}`)
     }
-    else {
-        chores.push(inputValue)
-        const element = document.createElement('li')
-        const textNode = document.createTextNode(inputValue)
-        element.appendChild(textNode)
-        list.appendChild(element)
-        element.addEventListener('click', (e) => { e.target.remove() })
-    }
 }
+//console.log(Object)   // Object() { [native code] }
+//console.log(car.hasOwnProperty('name'))   //true
+//console.log(car)   //{name: 'C Class', manufacturer: 'Mercedes', print: ƒ}
+// console.log(Object.keys(car))     //(3) ['name', 'manufacturer', 'print']
+// console.log(Object.values(car))  //(3) ['C Class', 'Mercedes', ƒ]
 
-button.addEventListener('click',callbackfunc)
+
+
+
+
+
+
+
+
+
 
 
 
