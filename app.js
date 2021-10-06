@@ -1,21 +1,29 @@
-// setTimeout(()=>{
-//     console.log("aalok")
-// },5000)  //after 5 sec output show ,5000ms
-
-// console.log("sam")  //sam
-
-// //here sam show first then aalok even if time is 0, also even if sam is 100 or more time
-
-
 //Promise
 
-var data = fetch('https://jsonplaceholder.typicode.com/todos/10')
+console.log("one")
+setTimeout(function timeout(){
+    console.log("Timer 1")
+},2000);
+setTimeout(function timeout(){
+    console.log("Timer 2")
+},1000);
+console.log("two")
+console.log("two")
+console.log("two")
+console.log("two")
+console.log("two")
+console.log("two")
 
-console.log(data)   //Promise {<pending>}
+
+// let data = fetch('https://jsonplaceholder.typicode.com/users')
+
+// console.log(data)
 
 
 
-
+// let response = fetch('https://jsonplaceholder.typicode.com/users').then(data => {
+//     console.log(data)
+// })
 
 
 
