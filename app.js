@@ -1,71 +1,39 @@
-//Promise
-
-console.log("one")
-setTimeout(function timeout(){
-    console.log("Timer 1")
-},2000);
-setTimeout(function timeout(){
-    console.log("Timer 2")
-},1000);
-console.log("two")
-console.log("two")
-console.log("two")
-console.log("two")
-console.log("two")
-console.log("two")
+// console.log(module)
 
 
-// let data = fetch('https://jsonplaceholder.typicode.com/users')
-
-// console.log(data)
+// console.log(require('./index'))   // { greet: [Function: greet] }
 
 
+// const stuff=require('./index')
+// console.log(stuff)    
+//o/p
+// { greet: [Function: greet] }
+//i m index.js
 
-// let response = fetch('https://jsonplaceholder.typicode.com/users').then(data => {
-//     console.log(data)
-// })
-
-
-
-
-
-
-
-
-
-
-
-
-
+// const stuff=require('./utils')
+// console.log(stuff)
+//o/p
+// {
+//     add: [Function: add],
+//     substract: [Function: substract],
+//     multiply: [Function: multiply],
+//     divide: [Function: divide]
+//   } 
 
 
-
-
-
-
-
-
-
-   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+const {add,substract,multiply,divide,message}=require('./utils')
+require('./utils')
+add()
+substract()
+multiply()
+divide()
+console.log(message)
+//o/p
+// I Add stuff
+// I sub stuff
+// I multiply stuff
+// I divide stuff
+//Message
 
 
 
