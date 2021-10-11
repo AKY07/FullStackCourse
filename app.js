@@ -1,13 +1,16 @@
-const path = require('path')
-// console.log(path.resolve('./utils.js'))  //give absolute path of the file
-// // console.log(path)
+const fs = require('fs')
+// console.log(fs)
+// fs.readFile('./text.txt','utf8',(error,data)=>{
+//     if (error) console.log(error)
+//     else console.log(data)
+// })
+
+// console.log(fs.readFileSync('./text.txt','utf8'))
 
 
-// console.log(path.relative('/',"./utils.js")) //give relative path, relative to whatever path we specify
+// console.log('i m random log')
 
-// console.log(path.extname('./app.js'))
-// console.log(path.dirname('./app.js'))   //dirname means directory name
-
-// console.log(__dirname)    //give path of current directory
-
-console.log(path.join(__dirname,'app.js'))   //similer to path.resolve
+fs.writeFile('./text.txt','new stuff inside the file',(error)=>{
+    if (error) console.log(error)
+    
+})  //change content of text.txt
