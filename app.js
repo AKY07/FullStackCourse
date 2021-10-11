@@ -1,32 +1,13 @@
-
-const button=document.querySelector('button')
-const input=document.querySelector('input')
-const div=document.querySelector('div')
-
-// div.innerHTML=localStorage.getItem('InputValue')
-
-// button.addEventListener('click',(req,res)=>{
-//     // localStorage.setItem('InputValue',input.value)
-//     localStorage.setItem('InputValue',[1,2,3,4,5])
-//     div.innerHTML=input.value
-// })
-
-const arr=[1,2,3,4,5]
-const val=JSON.stringify(arr)
-
-console.log(val)
-
-localStorage.setItem('val',JSON.stringify(arr))
-console.log(JSON.parse(localStorage.getItem('val')))
+const path = require('path')
+// console.log(path.resolve('./utils.js'))  //give absolute path of the file
+// // console.log(path)
 
 
-//''
-// to access local storage 
-// localStorage.setItem('InputValue',"Something")
-// console.log(localStorage.getItem("InputValue"))
-//''
+// console.log(path.relative('/',"./utils.js")) //give relative path, relative to whatever path we specify
 
+// console.log(path.extname('./app.js'))
+// console.log(path.dirname('./app.js'))   //dirname means directory name
 
+// console.log(__dirname)    //give path of current directory
 
-
-
+console.log(path.join(__dirname,'app.js'))   //similer to path.resolve
