@@ -1,39 +1,30 @@
-// console.log(module)
+
+const button=document.querySelector('button')
+const input=document.querySelector('input')
+const div=document.querySelector('div')
+
+// div.innerHTML=localStorage.getItem('InputValue')
+
+// button.addEventListener('click',(req,res)=>{
+//     // localStorage.setItem('InputValue',input.value)
+//     localStorage.setItem('InputValue',[1,2,3,4,5])
+//     div.innerHTML=input.value
+// })
+
+const arr=[1,2,3,4,5]
+const val=JSON.stringify(arr)
+
+console.log(val)
+
+localStorage.setItem('val',JSON.stringify(arr))
+console.log(JSON.parse(localStorage.getItem('val')))
 
 
-// console.log(require('./index'))   // { greet: [Function: greet] }
-
-
-// const stuff=require('./index')
-// console.log(stuff)    
-//o/p
-// { greet: [Function: greet] }
-//i m index.js
-
-// const stuff=require('./utils')
-// console.log(stuff)
-//o/p
-// {
-//     add: [Function: add],
-//     substract: [Function: substract],
-//     multiply: [Function: multiply],
-//     divide: [Function: divide]
-//   } 
-
-
-const {add,substract,multiply,divide,message}=require('./utils')
-require('./utils')
-add()
-substract()
-multiply()
-divide()
-console.log(message)
-//o/p
-// I Add stuff
-// I sub stuff
-// I multiply stuff
-// I divide stuff
-//Message
+//''
+// to access local storage 
+// localStorage.setItem('InputValue',"Something")
+// console.log(localStorage.getItem("InputValue"))
+//''
 
 
 
